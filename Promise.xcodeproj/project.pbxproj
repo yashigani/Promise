@@ -160,7 +160,6 @@
 				TargetAttributes = {
 					3FACCE991C08ADDC0026D92F = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = LHQ59845JU;
 					};
 					3FACCEA31C08ADDC0026D92F = {
 						CreatedOnToolsVersion = 7.1.1;

@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.summary = "Promise.swift - A Promise implementation written in Swift"
 
     s.description = <<-DESC
-        Promise.swift - A Promise implementation written in Swift
+        A Promise implementation written in Swift
     DESC
 
     s.authors = { "yashigani" => "tai.fukui@gmail.com" }

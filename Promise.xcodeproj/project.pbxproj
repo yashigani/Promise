@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F9059231C16DC2600C108F6 /* UniversalFramework_Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3F90591E1C16DC2600C108F6 /* UniversalFramework_Base.xcconfig */; };
+		3F9059241C16DC2600C108F6 /* UniversalFramework_Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3F90591F1C16DC2600C108F6 /* UniversalFramework_Framework.xcconfig */; };
+		3F9059251C16DC2600C108F6 /* UniversalFramework_Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3F9059201C16DC2600C108F6 /* UniversalFramework_Test.xcconfig */; };
 		3FACCE9E1C08ADDC0026D92F /* Promise.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FACCE9D1C08ADDC0026D92F /* Promise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FACCEA51C08ADDC0026D92F /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FACCE9A1C08ADDC0026D92F /* Promise.framework */; };
 		3FACCEAA1C08ADDC0026D92F /* PromiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACCEA91C08ADDC0026D92F /* PromiseTests.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F90591E1C16DC2600C108F6 /* UniversalFramework_Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = UniversalFramework_Base.xcconfig; path = xcconfigs/UniversalFramework_Base.xcconfig; sourceTree = "<group>"; };
+		3F90591F1C16DC2600C108F6 /* UniversalFramework_Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = UniversalFramework_Framework.xcconfig; path = xcconfigs/UniversalFramework_Framework.xcconfig; sourceTree = "<group>"; };
+		3F9059201C16DC2600C108F6 /* UniversalFramework_Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = UniversalFramework_Test.xcconfig; path = xcconfigs/UniversalFramework_Test.xcconfig; sourceTree = "<group>"; };
 		3FACCE9A1C08ADDC0026D92F /* Promise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Promise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FACCE9D1C08ADDC0026D92F /* Promise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
 		3FACCE9F1C08ADDC0026D92F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +64,9 @@
 				3FACCE9C1C08ADDC0026D92F /* Promise */,
 				3FACCEA81C08ADDC0026D92F /* PromiseTests */,
 				3FACCE9B1C08ADDC0026D92F /* Products */,
+				3F90591E1C16DC2600C108F6 /* UniversalFramework_Base.xcconfig */,
+				3F90591F1C16DC2600C108F6 /* UniversalFramework_Framework.xcconfig */,
+				3F9059201C16DC2600C108F6 /* UniversalFramework_Test.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,7 +160,6 @@
 				TargetAttributes = {
 					3FACCE991C08ADDC0026D92F = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = LHQ59845JU;
 					};
 					3FACCEA31C08ADDC0026D92F = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -182,6 +190,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9059231C16DC2600C108F6 /* UniversalFramework_Base.xcconfig in Resources */,
+				3F9059251C16DC2600C108F6 /* UniversalFramework_Test.xcconfig in Resources */,
+				3F9059241C16DC2600C108F6 /* UniversalFramework_Framework.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +324,7 @@
 		};
 		3FACCEAF1C08ADDC0026D92F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F90591F1C16DC2600C108F6 /* UniversalFramework_Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -333,6 +345,7 @@
 		};
 		3FACCEB01C08ADDC0026D92F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F90591F1C16DC2600C108F6 /* UniversalFramework_Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -352,6 +365,7 @@
 		};
 		3FACCEB21C08ADDC0026D92F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9059201C16DC2600C108F6 /* UniversalFramework_Test.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PromiseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -362,6 +376,7 @@
 		};
 		3FACCEB31C08ADDC0026D92F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9059201C16DC2600C108F6 /* UniversalFramework_Test.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PromiseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
